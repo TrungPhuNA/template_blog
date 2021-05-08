@@ -1,0 +1,46 @@
+@media (max-width: 575px) {
+  form.form-search {
+    padding-bottom: 5px;
+    input {
+      height: 40px;
+      font-size: 25px;
+    }
+    button {
+      top: 15px;
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (min-width: 576px) {
+  form.form-search {
+    padding-bottom: 10px;
+    input {
+      height: 50px;
+      font-size: 35px;
+    }
+    button {
+      top: 20px;
+      i {
+        font-size: 25px;
+      }
+    }
+  }
+}
+form.form-search {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  border-bottom: 1px solid $border;
+  input {
+    width: 100%;
+  }
+  button {
+    position: absolute;
+    right: 0;
+    i {
+      color: #333;
+    }
+  }
+}

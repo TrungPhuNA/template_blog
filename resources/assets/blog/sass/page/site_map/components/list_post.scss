@@ -1,0 +1,20 @@
+.list-post {
+    padding: 10px 0 20px;
+    .item {
+        margin-bottom: 10px;
+        a.post-title {
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: $desc;
+        }
+        a.post-cat {
+            font-size: 14px;
+            font-weight: 400;
+            color: $desc;
+        }
+        a:hover {
+            color: #2c87f3;
+        }
+    }
+}

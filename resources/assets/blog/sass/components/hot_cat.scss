@@ -1,0 +1,10 @@
+.hot-cat {
+	&__title {
+		text-align: center;
+		margin: 20px 0;
+	}
+	&__content {
+		padding-bottom: 30px;
+		border-bottom: 1px solid $border;
+	}
+}

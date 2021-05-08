@@ -1,0 +1,129 @@
+#action-box-mb {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+  background: #fff;
+  border-top: 1px solid #f2f2f2;
+  width: 100%;
+  transition: bottom 0.2s ease-in-out;
+  max-width: 720px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+
+  .action-box {
+    display: flex;
+    &__item {
+      width: 25%;
+      text-align: center;
+      padding: 3px;
+      position: relative;
+      a {
+        color: #6F6F6F;
+        font-size: 13px;
+        text-decoration: none;
+        display: block;
+        &.active {
+          color: #495298;
+        }
+        > i {
+          display: block;
+          font-size: 20px;
+          margin-bottom: -3px;
+        }
+      }
+    }
+  }
+}
+.wrapper-mb {
+  background: rgba(0, 0, 0, .6);
+  bottom: -5000px;
+  display: none;
+  left: -5000px;
+  position: fixed;
+  right: -5000px;
+  top: -10000px;
+  z-index: 1;
+}
+.action-popup {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
+  background: white;
+  width: 270px;
+  padding: 10px;
+  right: 7px;
+  list-style: none;
+  border-radius: 5px;
+  &__info {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    a > img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    > div {
+      margin-left: 10px;
+      text-align: left;
+    }
+    &--name{
+      i{
+        display: inline-block !important;
+        font-size: 14px !important;
+      }
+    }
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    li {
+      display: block;
+      a {
+        display: block;
+        padding: 5px 10px;
+        text-align: left;
+        font-size: 14px;
+        > i {
+          display: inline !important;
+          font-size: 14px !important;
+          padding-right: 10px;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.action-box-up {
+  bottom: 0 !important;
+}
+.show {
+  display: block !important;
+}
+.hide {
+  display: none !important;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  #action-box-mb {
+    display: block;
+  }
+}
+@media (max-width: 320px) {
+  #action-box-mb {
+    .action-box {
+      &__item {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

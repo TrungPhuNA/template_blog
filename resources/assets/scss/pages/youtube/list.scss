@@ -1,0 +1,25 @@
+// Base
+@import "../../base/common";
+
+// Plugin
+
+
+// Component
+@import "./components/common";
+@import "./components/header";
+@import "./components/sidebar_menu";
+@import "./components/menu";
+@import "./components/sidebar_mb";
+@import "./components/list_video";
+@import "./components/list_cat";
+
+#main-content {
+    padding: 0 20px;
+}
+.small-title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #030303;
+    margin-bottom: 20px;
+}
+

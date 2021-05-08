@@ -1,0 +1,80 @@
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Copy text color
+/// @type Color
+$main-text:#252525;
+$main-text-sub:#484848;
+$background-main:#fafafa;
+$text-color: rgb(34, 34, 34) !default;
+$black: #000;
+$pink: #fb236a;
+$white-grey-1: #f1f1f1;
+$black: #000;
+$dark-grey-3: #222;
+$dark-3: #333;
+$dark-grey-2: #444;
+$dark-grey-1: #555;
+$grey-6: #666;
+$grey-1: #888;
+$dark-1: #202020;
+$yellow: #f8d309;
+$white-1: #fff;
+$white-grey-2: #edeff7;
+$white-grey-f2: #f2f2f2;
+$blue-dark-1: #4a4e8a;
+$blue-dark-2: #24324a;
+$blue-grey-1: #8a99b3;
+$blue-dark-3: #1d293e;
+$blue-grey-2: #6a7d9b;
+$blue-grey-3: #8b91dd;
+$dark-2: #1e1e1e;
+$blue-1: #0c71c1;
+$blue-2: #2164f3;
+$blue-3: #1662a0;
+$grey-2: #f2f2f2;
+$grey-3: #eee;
+$grey-4: #e6e7ef;
+$grey-5: #929292;
+$white-grey: #e8ecec;
+$violet: #868cd6;
+$blue-vio: #48509a;
+$white-xam: #f4f4f4;
+$xanh-tim: #495091;
+$xanh-den: #222222;
+$blue-dam: #141f72;
+$share-icon : #ccc;
+
+$border: #d3d3d3;
+$border_e5e5e5: #e5e5e5;
+$border_gray: #f6f6f6;
+$bg-dark-blue: #10195d;
+$box-email: #f9f9f9;
+$btn_get_email: #a287f4;
+$xanh: #43A047;
+
+$brand-color: #4688ff !default;
+$brand-color-background:#223594;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+$max-width: 1170px !default;
+
+
+$breakpoints: (
+        'small': 320px,
+        'medium': 768px,
+        'large': 1024px,
+) !default;
+
+
+$base-url: '/assets/' !default;

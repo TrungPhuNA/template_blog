@@ -1,0 +1,12 @@
+.search-tag {
+  padding-top: 30px;
+	.list-tag {
+		padding-top: 20px;
+		li {
+			display: inline-block;
+		}
+		li:not(:last-child) {
+			margin: 0 5px 10px 0;
+		}
+	}
+}

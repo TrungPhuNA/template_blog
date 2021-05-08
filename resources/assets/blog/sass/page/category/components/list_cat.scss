@@ -1,0 +1,82 @@
+.list-cat {
+    &__item {
+        padding: 10px 0;
+        display: flex;
+        &:not(:last-child) {
+            border-bottom: 1px solid #cccccc;
+        }
+        .cat__image {
+            a {
+                display: block;
+            }
+            img {
+                width: 132px;
+                height: 100px;
+                vertical-align: top;
+                object-fit: cover;
+            }
+        }
+        .cat__content {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .cat__title {
+            margin-bottom: 10px;
+            a {
+                vertical-align: top;
+                font-size: 18px;
+                font-weight: 600;
+                display: -webkit-box;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
+        .cat__parent {
+            margin-bottom: 10px;
+            a {
+                font-size: 13px;
+                font-weight: 400;
+                text-transform: uppercase;
+                display: -webkit-box;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .cat__desc {
+            font-size: 15px;
+            line-height: 1.4;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+    }
+}
+@media (max-width: 525px) {
+    .list-cat {
+        &__item {
+            .cat__image {
+                img {
+                    width: 100px;
+                    height: 74px;
+                }
+            }
+            .cat__content {
+                padding-left: 10px;
+            }
+            .cat__title {
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

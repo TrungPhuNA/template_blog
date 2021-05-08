@@ -1,0 +1,41 @@
+@import '../../abstracts/variables';
+@import '../../abstracts/variables_v3';
+@import '../../abstracts/functions';
+@import '../../abstracts/mixins';
+
+@import '../../../fonts/vendor/font-awesome/scss/font-awesome';
+@import '../../../fonts/vendor/line-awesome/scss/line-awesome';
+
+
+@import '../../components/google_adsense';
+@import '../../components/ads_service/recruitment_service';
+
+
+@import '../../base/base';
+@import '../../base/button';
+@import "../../base/button_social";
+@import "../../base/rate_star";
+@import '../../layouts/layout.scss';
+@import '../../components/footer/footer_v3';
+@import '../../components/nav_bottom';
+
+// Component global
+@import "../../components/header/header_v2";
+@import "../../components/header/header_responsive";
+@import "../../components/header/navbar";
+
+@import '../../components/breadcrumb.scss';
+@import "../../components/navbar_responsive_form";
+@import "../../components/main_content_detail";
+@import "../../components/form_search_blog";
+@import "../../components/box_ads.scss";
+@import "../../components/post/post.scss";
+@import "../../components/sidebar_wrapper_mb";
+@import "../../components/intro_cv";
+@import "../../components/box_pr";
+@import "../../components/list_cat_sidebar";
+
+// Component local
+@import 'components/post_detail';
+@import 'components/cv_suggestion';
+@import 'components/post_grid';

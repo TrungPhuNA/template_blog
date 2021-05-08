@@ -1,0 +1,42 @@
+.intro-cv {
+    background-color: #F6F6F6;
+    padding: 20px 0;
+    text-align: center;
+    color: #333333;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &__content {
+        margin-bottom: 20px;
+        .content-item {
+            display: inline-block;
+            padding: 0 50px;
+            &__image {
+                margin-bottom: 10px;
+                img {
+                    width: 90px;
+                    height: 90px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+            &__desc {
+                text-align: center;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 1.4;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .intro-cv {
+        display: none;
+    }
+}

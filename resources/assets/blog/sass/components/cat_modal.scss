@@ -1,0 +1,47 @@
+@media(max-width: 992px) {
+	.cat-modal {
+		display: none!important;
+	}
+}
+.cat-modal {
+	position: fixed;
+	top: 0;
+	padding-top: 60px;
+	overflow-y: scroll;
+	height: 100%;
+	width: 100%;
+	z-index: 30;
+	background: #fff;
+	display: none;
+	&-top {
+		padding: 20px 0;		
+	}
+	&-body {
+		width: 100%;
+		padding: 2% 0;
+	}
+	&-footer {
+		padding-bottom: 40px;
+		text-align: center;
+		.footer-list-link {
+			li {
+				padding: 0 30px;
+				display: inline-block;
+				a {
+					text-align: center;
+					color: $main-text;
+					span {
+						font-size: 16px;
+						font-weight: 600;
+						display: block;
+					}
+					i {
+						display: block;
+						font-size: 22px;
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+}

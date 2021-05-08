@@ -1,0 +1,143 @@
+
+footer {
+  background-color: #101215;
+  color: #7D8492;
+  .title {
+    color: #d1d3d6;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 21px;
+  }
+  a, p {
+    color: #7d8492;
+    vertical-align: top;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+  }
+  a {
+    display: inline-block;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      color: #d1d3d6;
+    }
+  }
+
+  .footer {
+    padding: 50px 15px;
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    .top {
+      margin-bottom: 30px;
+      .col {
+        width: calc(100% / 5);
+        max-width: calc(100% / 5);
+      }
+      .item {
+        padding: 15px;
+        a {
+          display: block;
+        }
+      }
+    }
+    .bot {
+      .col:first-child {
+        width: calc((100% / 5) * 2);
+        max-width: calc((100% / 5) * 2);
+      }
+      .col:last-child {
+        width: calc((100% / 5) * 3);
+        max-width: calc((100% / 5) * 3);
+      }
+      .item {
+        padding: 15px;
+      }
+    }
+  }
+  .bottom {
+    border-top: 1px solid #7D8492;
+    width: 100%;
+    .content {
+      padding: 15px 0;
+      font-size: 13px;
+      a {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.scroll-top {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 33px;
+  z-index: 1;
+  .content {
+    cursor: pointer;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #a4a7ac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      background: #2b333d;
+      i {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    .footer {
+      padding: 30px 15px;
+      .top {
+        margin-bottom: 0;
+        .col {
+          width: calc(100% / 2);
+          max-width: calc(100% / 2);
+        }
+        .item {
+
+        }
+      }
+      .bot {
+        .col {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+      }
+    }
+    .bottom {
+      text-align: center;
+      .content {
+        padding: 10px 15px;
+      }
+    }
+  }
+  .scroll-top {
+    right: 10px;
+  }
+}
+.bct {
+  img {
+    width: 150px;
+  }
+}

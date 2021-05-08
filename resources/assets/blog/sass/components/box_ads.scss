@@ -1,0 +1,22 @@
+.box-ads {
+  margin: 20px 0 0;
+  &__title {
+    text-align: center;
+    font-size: 14px;
+    color: #484848;
+  }
+}
+.ads-pd-top {
+    margin-bottom: 20px;
+}
+.ads-pd-bottom {
+    margin: 40px 0;
+}
+@media (max-width: 768px) {
+  .box-ads {
+    display: none;
+  }
+    .ads-pd-bottom {
+        margin: 30px 0!important;
+    }
+}

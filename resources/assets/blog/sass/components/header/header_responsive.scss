@@ -1,0 +1,46 @@
+@media (min-width: 992px) {
+  .header-responsive {
+    display: none;
+  }
+}
+
+.header-responsive {
+  margin-bottom: 20px;
+
+  .navbar-responsive {
+    background-color: #4680ff;
+    height: 45px;
+    padding: 0 15px;
+
+    a {
+      i {
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+
+    .btn-menu, .redirect-home {
+      color: #fff;
+      font-size: 16px;
+    }
+    .redirect-home {
+      margin-right: 20px;
+    }
+
+    .logo__responsive {
+      img {
+        width: 70px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes input-nav {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

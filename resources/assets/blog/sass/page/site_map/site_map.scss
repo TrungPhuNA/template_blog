@@ -1,0 +1,30 @@
+@import '../../abstracts/variables';
+@import '../../abstracts/variables_v3';
+@import '../../abstracts/functions';
+@import '../../abstracts/mixins';
+
+@import '../../../fonts/vendor/font-awesome/scss/font-awesome';
+@import '../../../fonts/vendor/line-awesome/scss/line-awesome';
+
+
+@import '../../base/base';
+@import '../../base/button';
+@import '../../layouts/layout.scss';
+@import '../../components/footer/footer_v3';
+@import '../../components/nav_bottom';
+
+// Component global
+@import "../../components/header/header_v2";
+@import "../../components/header/header_responsive";
+@import "../../components/header/navbar";
+
+@import '../../components/search_tag.scss';
+@import "../../components/navbar_responsive_form";
+@import "../../components/tags";
+@import "../../components/post/hot_post";
+@import "../../components/sidebar_wrapper_mb";
+
+// Component local
+@import "components/common";
+@import "components/alpha_tag";
+@import "components/alpha_list";

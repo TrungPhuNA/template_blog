@@ -1,0 +1,131 @@
+@media (max-width: 575px) {
+	.hot-post {
+      &__content {
+        order: 1;
+        padding-left: 10px;
+      }
+      &__category {
+        a {
+          font-size: 13px !important;
+        }
+      }
+      &__title {
+        a {
+          font-size: 17px;
+        }
+      }
+      &__image {
+			flex: 0 0 40%;
+			img {
+				height: 100px;
+			}
+		}
+	}
+}
+@media (min-width: 576px) and(max-width: 768px) {
+	.hot-post {
+      &__content {
+        padding-right: 20px;
+      }
+		&__category {
+			margin-bottom: 5px;
+			a {
+				font-size: 16px!important;
+			}
+		}
+		&__title {
+			margin-bottom: 10px;
+			a {
+				line-height: 1.6;
+              font-size: 20px;
+			}
+		}
+		&__image {
+          flex: 0 0 30%;
+		}
+	}
+}
+@media (min-width: 769px) {
+	.hot-post {
+      &__content {
+        padding-right: 10px;
+      }
+		&__title {
+			margin-bottom: 5px;
+          a {
+            font-size: 16px;
+          }
+		}
+		&__image {
+            width: 130px;
+            img {
+				height: 90px;
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+  .hot-post {
+    &__image {
+        width: 90px;
+        img {
+        height: 70px;
+      }
+    }
+	}
+}
+.box-hot-post {
+  padding-top: 15px;
+}
+.list-hot-post {
+    padding: 20px 0;
+}
+.hot-post {
+	display: flex;
+  padding: 10px 0;
+	&__image {
+		img {
+            width: 100%;
+          border-radius: 2px;
+        }
+    }
+  &__content {
+    flex: 1;
+  }
+	&__category {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      /* autoprefixer: ignore next */
+      -webkit-box-orient: vertical;
+		a {
+			font-size: 14px;
+          color: #484848;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+	&__title {
+      margin-bottom: 7px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+      /* autoprefixer: ignore next */
+		-webkit-box-orient: vertical;
+		a {
+			font-family: 'SFD-bold';
+			font-weight: 600;
+			color: #333;
+		}
+	}
+	&__time {
+		span {
+			font-size: 13px;
+			color: #484848;
+			margin-top: 2px;
+		}
+	}
+}

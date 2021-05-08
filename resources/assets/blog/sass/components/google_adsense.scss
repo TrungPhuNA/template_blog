@@ -1,0 +1,45 @@
+.sg ins {
+    margin: auto;
+}
+.row-adsense {
+    ins {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    ins.mb-10 {
+        margin-bottom: 10px;
+    }
+}
+.box_ads_fix {
+    position: fixed;
+    top: 40px;
+}
+.box_ads_stop_fix {
+    position: absolute;
+    bottom: 0;
+}
+
+// post detail
+.banner-left-post {
+    position: absolute;
+    left: 4.5%;
+    top: 85px;
+}
+.banner-right-post {
+    position: absolute;
+    right: 4.5%;
+    top: 85px;
+}
+.banner-left-post.fixed,
+.banner-right-post.fixed{
+    position: fixed !important;
+}
+.hide {
+    display: none;
+    transition: all 0.25s;
+}
+.ads-image {
+    img {
+        max-width: 100% !important;
+    }
+}

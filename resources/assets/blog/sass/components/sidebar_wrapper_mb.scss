@@ -1,0 +1,134 @@
+.overlay {
+    background: rgb(9 13 43 / 19%);
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar-wrapper-mb {
+    display: none;
+    position: fixed;
+    z-index: 21;
+    background: #fff;
+    height: 100%;
+    width: 80%;
+    max-width: 500px;
+    padding: 40px 20px 0 20px;
+    overflow: auto;
+
+    ul {
+        list-style: none;
+
+        li {
+            padding-bottom: 10px;
+
+            a {
+                display: block;
+                font-size: 16px;
+                color: #444444;
+
+                i {
+                    margin-right: 15px;
+                }
+            }
+
+            ul {
+                padding: 10px 0 0 20px;
+            }
+        }
+    }
+
+    .sidebar-left {
+        display: none;
+        width: 100%;
+        height: 100%;
+
+        i {
+            color: #BABABA;
+            font-size: 16px;
+            margin-right: 20px;
+            width: 20px;
+        }
+    }
+
+    .sidebar-right {
+        display: none;
+        width: 100%;
+        height: 100%;
+
+        form {
+            padding-bottom: 30px;
+
+            input {
+                outline: none;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                flex: 1;
+                text-indent: 10px;
+                margin-right: 10px;
+                height: 35px;
+            }
+
+            input::before {
+                content: "";
+            }
+
+            button {
+                height: 35px;
+                width: 50px;
+                border-radius: 5px;
+                font-weight: 500;
+                background: #F2F2F2;
+            }
+        }
+
+        ul {
+            li {
+                a {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    text-transform: capitalize;
+
+                    i {
+                        font-size: 18px;
+                        color: #666666;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.active-left {
+    display: block !important;
+    animation: active-left 0.25s;
+}
+
+.active-right {
+    display: block !important;
+    right: 0;
+    animation: active-right 0.25s;
+}
+
+@-webkit-keyframes active-left {
+    0% {
+        left: -100%
+    }
+    100% {
+        left: 0
+    }
+}
+
+@-webkit-keyframes active-right {
+    0% {
+        right: -100%
+    }
+    100% {
+        right: 0
+    }
+}

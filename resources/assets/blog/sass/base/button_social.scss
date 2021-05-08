@@ -1,0 +1,78 @@
+@media (max-width: 575px) {
+    .zalo-icon {
+        width: 14px;
+        height: 14px;
+    }
+}
+@media (min-width: 576px) {
+    .zalo-icon {
+        width: 18px;
+        height: 17px;
+    }
+}
+.btn-share {
+    display: flex;
+    width: 40px;
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.3s all;
+    &:hover {
+        box-shadow: 0 1px 6px 2px rgba(0,0,0,0.1);
+    }
+}
+.btn-share + .btn-share {
+    margin-left: 10px;
+}
+.facebook {
+    background: $facebook;
+    &:hover {
+        background: #fff;
+        color: $facebook;
+    }
+}
+.linkedin {
+    background: $linkedin;
+    &:hover {
+        background: #fff;
+        color: $linkedin;
+    }
+}
+.printerest {
+    background: red;
+    &:hover {
+        background: #fff;
+        color: red;
+    }
+}
+.email,.like {
+    background-color: $primary;
+    &:hover {
+        background: #fff;
+        color: $primary;
+    }
+}
+.gmail {
+    background-color: #D85043;
+    &:hover {
+        background: #fff;
+        color: #D85043;
+    }
+}
+.twitter {
+    background-color: #1DA1F2;
+    &:hover {
+        background: #fff;
+        color: #1DA1F2;
+    }
+}
+.zalo-share-button {
+    background-color: $primary;
+    .zalo-icon {
+        margin-right: 5px;
+    }
+}

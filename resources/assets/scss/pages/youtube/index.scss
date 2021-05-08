@@ -1,0 +1,18 @@
+// Base
+@import "../../base/common";
+
+// Plugin
+
+
+// Component
+@import "./components/common";
+@import "./components/header";
+@import "./components/sidebar_menu";
+@import "./components/video";
+@import "./components/menu";
+@import "./components/sidebar_mb";
+
+#main-content {
+    padding: 12px 20px 0;
+}
+

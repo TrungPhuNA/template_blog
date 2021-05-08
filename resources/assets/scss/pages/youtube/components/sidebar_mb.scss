@@ -1,0 +1,40 @@
+.sidebar-mb-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+.sidebar-mb {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 100vh;
+    z-index: 100;
+    &__top {
+        height: 56px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #f2f2f2;
+        .toggle-tab-mb {
+            padding: 0 25px;
+            &__btn {
+                color: #606060;
+                font-size: 21px;
+            }
+        }
+        .logo-sidebar {
+            line-height: 1;
+            width: 90px;
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}

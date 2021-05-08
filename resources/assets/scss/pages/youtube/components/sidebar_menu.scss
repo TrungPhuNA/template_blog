@@ -1,0 +1,51 @@
+#sidebar-menu {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 60px;
+    z-index: 9;
+}
+@media (min-width: 1326px) {
+    #sidebar-menu {
+        &.default {
+            .menu-default {
+                display: block;
+            }
+            .menu-collapse {
+                display: none;
+            }
+        }
+        &.collapse {
+            .menu-default {
+                display: none;
+            }
+            .menu-collapse {
+                display: block;
+            }
+        }
+    }
+}
+@media (max-width: 1325px) {
+    #sidebar-menu {
+        .menu-default {
+            display: none;
+        }
+        .menu-collapse {
+            display: block;
+        }
+    }
+}
+@media (max-width: 808px) {
+    #sidebar-menu {
+        .menu-default {
+            display: none;
+        }
+        .menu-collapse {
+            display: none;
+        }
+    }
+}

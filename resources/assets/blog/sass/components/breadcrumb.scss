@@ -1,0 +1,38 @@
+//@media (max-width: 575px) {
+//	.breadcrumb {
+//      text-align: left;
+//	}
+//}
+
+.breadcrumb {
+	max-width: 800px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	&-menu {
+      overflow-x: auto;
+      visibility: visible;
+		li {
+			display: inline-block;
+			color: #888;
+			a {
+				color: #666;
+				font-size: 13px;
+			}
+			&:last-child{
+				a {
+					cursor: default;
+				}
+			}
+		}
+		li:not(:last-child)::after {
+			content: "\BB";
+			display: inline-block;
+			padding-left: 5px;
+			margin-right: 5px;
+		}
+	}
+  &-menu::-webkit-scrollbar {
+    display: none;
+  }
+}

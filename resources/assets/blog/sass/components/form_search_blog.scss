@@ -1,0 +1,34 @@
+.form-search {
+	margin: 20px auto 30px;
+	input {
+		width: 90%;
+	}
+}
+form.form-search-blog {
+	position: sticky;
+	top: 80px;
+	input {
+		width: 80%;
+	}
+}
+form.form-search-blog,.form-search {
+	display: flex;
+	width: 50%;
+	height: 45px;
+	input {
+		margin-right: 2%;
+		padding: 10px 0;
+		text-indent: 5%;
+		border-radius: 100px;
+		border: 1px solid $primary;
+	}
+	button {
+		background: $primary;
+		width: 90px;
+		border-radius: 45px;
+		color: #fff;
+		i {
+			font-size: 18px;
+		}
+	}
+}

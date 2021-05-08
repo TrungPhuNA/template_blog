@@ -1,0 +1,44 @@
+.alpha-tag {
+    margin-bottom: 40px;
+    .alpha-item:first-child {
+        padding-top: 0;
+    }
+    .alpha-name {
+        position: relative;
+        h3 {
+            font-size: 26px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 0;
+            line-height: 1;
+            background-color: #fff;
+            padding: 0 15px 0 0;
+            display: inline-block;
+            position: relative;
+        }
+        &:before {
+            height: 2px;
+            width: 100%;
+            border-top: 1px solid #e9e9e9;
+            content: '';
+            position: absolute;
+            bottom: 40%;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .alpha-item {
+        padding: 15px 0;
+    }
+}
+@media (max-width: 767px){
+    .alpha-item {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 1220px) {
+    .alpha-tag {
+        padding-right: 50px;
+    }
+}

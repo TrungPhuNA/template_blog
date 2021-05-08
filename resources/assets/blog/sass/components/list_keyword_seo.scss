@@ -1,0 +1,24 @@
+.list-keyword-seo {
+	padding: 50px 0;
+	text-align: justify;
+	line-height: 2;
+	letter-spacing: 2px;
+	a {
+		font-size: 14px;
+		letter-spacing: normal;
+		color: rgba(0, 0, 0, 0.54);
+	}
+	a:hover {
+		color: $primary;
+	}
+	a:not(:last-child)::after {
+		content: ",";
+		display: inline-block;
+		margin-left: 2px;
+	}
+}
+@media (max-width: 768px) {
+	.list-keyword-seo {
+		display: none!important;
+	}
+}
